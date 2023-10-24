@@ -9,10 +9,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "MindlessSwiftyChrono",
+    name: "SwiftyChrono",
 	products: [
 		.library(
-			name: "MindlessSwiftyChrono",
+			name: "SwiftyChrono",
 			targets: ["SwiftyChrono"]
 		),
 	],
