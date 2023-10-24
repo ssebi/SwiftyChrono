@@ -10,5 +10,21 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftyChrono",
-    dependencies: []
+	products: [
+		.library(
+			name: "SwiftyChrono",
+			targets: ["SwiftyChrono"]),
+	],
+	dependencies: [
+	],
+	targets: [
+		.target(
+			name: "SwiftyChrono",
+			dependencies: [],
+			path: "Sources"),
+		.testTarget(
+			name: "SwiftyChronoTests",
+			dependencies: ["SwiftyChrono"],
+			path: "Tests"),
+	]
 )
