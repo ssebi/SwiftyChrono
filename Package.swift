@@ -9,11 +9,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftyChrono",
+    name: "MindlessSwiftyChrono",
 	products: [
 		.library(
-			name: "SwiftyChrono",
-			targets: ["SwiftyChrono"]),
+			name: "MindlessSwiftyChrono",
+			targets: ["SwiftyChrono"]
+		),
 	],
 	dependencies: [
 	],
@@ -21,10 +22,12 @@ let package = Package(
 		.target(
 			name: "SwiftyChrono",
 			dependencies: [],
-			path: "Sources"),
+			path: "Sources"
+		),
 		.testTarget(
 			name: "SwiftyChronoTests",
 			dependencies: ["SwiftyChrono"],
-			path: "Tests"),
+			path: "Tests"
+		),
 	]
 )
